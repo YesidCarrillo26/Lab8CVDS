@@ -4,8 +4,8 @@
 
 ## INTEGRACIÓN DE CAPAS CON GOOGLE GUICE  
 
-![BaseDatos](./img/BaseDatos.PNG)  
-![DiagramaClases](./img/DiagramaClases.PNG)  
+![BaseDatos](/img/BaseDatos.png)  
+![DiagramaClases](/img/DiagramaClases.png)  
 
 ## PARTE I. INICIO EN CLASE
 1. **Actualice el proyecto del taller realizados en el ejercicio anterior. Agregue las clases y excepciones no descritas de ser necesario.**
