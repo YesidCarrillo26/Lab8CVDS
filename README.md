@@ -10,7 +10,7 @@
 ### Ejecucion del programa
 
 
-	``` 
+	``` java
 	mvn archetype:generate -DgroupId=edu.eci.cvds -DartifactId=JDBCExample -DarchetypeArtifactId=maven-archetype-quickstart -Dpackage=edu.eci.cvds.sampleprj.jdbc -DinteractiveMode=false 
 	```
 
