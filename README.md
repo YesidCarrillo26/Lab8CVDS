@@ -802,6 +802,4 @@ mvn exec:java -Dexec.mainClass="edu.eci.cvds.sampleprj.jdbc.JDBCExample" -Dexec.
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/bb95a11164fc4712943db140899979f4)](https://www.codacy.com/gh/J-382/CVDS_LAB_08/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=J-382/CVDS_LAB_08&amp;utm_campaign=Badge_Grade)[![CircleCI](https://circleci.com/gh/AngieMeG/CVDS_Lab_08.svg?style=svg)](https://circleci.com/gh/AngieMeG/CVDS_Lab_08)
 
-https://lab08-medina-perez-cvds.herokuapp.com/faces/registrocliente.xhtml
 
-https://lab08-medina-perez-cvds.herokuapp.com/faces/registroalquiler.xhtml
