@@ -583,7 +583,7 @@ mvn exec:java -Dexec.mainClass="edu.eci.cvds.sampleprj.jdbc.JDBCExample" -Dexec.
     }
     ```
 8. **Pruebe el programa ‘Main’ suministrado, y con este rectifique que a través de la capa lógica se pueda consultar un cliente.**  
-![ConsultaCliente](/img/ConsultarCliente.PNG)  
+![ConsultaCliente](/img/ConsultarCliente.png)  
 9. **Implemente los métodos que sean necesarios en las interfaces de las entidades (DAO) y en sus implementaciones haciendo uso del DAO inyectado. Haga un programa para comprobar que la consulta de un cliente se haga correctamente, a través de la capa lógica.**  
 
 ## PARTE II - PRUEBAS
