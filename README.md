@@ -9,8 +9,8 @@
 
 ### Ejecucion del programa
 ``` 
-mvn exec:java -Dexec.mainClass="edu.eci.cvds.sampleprj.jdbc.JDBCExample" 
--Dexec.args="argument1" 
+mvn exec:java -Dexec.mainClass="edu.eci.cvds.sampleprj.jdbc.JDBCExample" -Dexec.args="argument1" 
+
 ```
     
 ## PARTE I. INICIO EN CLASE
