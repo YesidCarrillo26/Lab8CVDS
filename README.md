@@ -8,7 +8,8 @@
 ![DiagramaClases](/img/DiagramaClases.png)  
 
 ### Ejecucion del programa
-``` mvn exec:java -Dexec.mainClass="edu.eci.cvds.sampleprj.jdbc.JDBCExample" 
+``` 
+mvn exec:java -Dexec.mainClass="edu.eci.cvds.sampleprj.jdbc.JDBCExample" 
 -Dexec.args="argument1" 
 ```
     
