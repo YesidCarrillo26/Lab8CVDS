@@ -31,7 +31,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author hcadavid
+ * @author
  */
 public class JDBCExample {
 
@@ -62,8 +62,12 @@ public class JDBCExample {
             System.out.println("-----------------------");
 
 
-            int suCodigoECI=20134423;
-            registrarNuevoProducto(con, suCodigoECI, "SU NOMBRE", 99999999);
+            int suCodigoECI=2165345;
+            registrarNuevoProducto(con, suCodigoECI, "Yesid Carrillo", 99999999);
+            con.commit();
+
+            suCodigoECI=2333819;
+            registrarNuevoProducto(con, suCodigoECI, "Ronaldo Henao", 99999999);
             con.commit();
 
 

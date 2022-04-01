@@ -29,6 +29,8 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
+// mvn exec:java -Dexec.mainClass="edu.eci.cvds.samples.services.client.MyBatisExample" -Dexec.args="argument1"
+
 /**
  *
  * @author hcadavid
@@ -67,8 +69,8 @@ public class MyBatisExample {
         SqlSession sqlss = sessionfact.openSession();
 
         ClienteMapper cm = sqlss.getMapper(ClienteMapper.class);
-        System.out.println("\n---------------------------------------- CONSULTAR CLIENTES ----------------------------------------");
-        System.out.println(cm.consultarClientes());
+        //System.out.println("\n---------------------------------------- CONSULTAR CLIENTES ----------------------------------------");
+        //System.out.println(cm.consultarClientes());
 
         int documentoPrueba = 6;
         System.out.println("\n--------------------------- CONSULTAR CLIENTE DOCUMENTO = " + documentoPrueba + " ---------------------------");
@@ -80,7 +82,7 @@ public class MyBatisExample {
         ItemMapper im = sqlss.getMapper(ItemMapper.class);
 
         System.out.println("\n------------------------------------------ CONSULTAR ITEMS -----------------------------------------");
-        System.out.println(im.consultarItems());
+        //System.out.println(im.consultarItems());
 
         int idItemPrueba = 545343;
         //System.out.println("\n--------------------------- CONSULTAR ITEM ID = " + idItemPrueba + " ---------------------------");
