@@ -10,6 +10,7 @@ public class ExcepcionServiciosAlquiler extends Exception {
     public static final String NO_ITEM_TYPE = "El tipo de item no existe.";
     public static final String INVALID_DATE = "La fecha de entrega debe ser luego de la fecha de inicio.";
 
+
     /**
      * Genera una excepcion con el mensaje dado
      * @param message mensaje de la excepción lanzada

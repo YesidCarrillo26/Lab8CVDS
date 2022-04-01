@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title> Registro Cliente </title>
+</h:head>
+<style>
+.ui-panelgrid td {
+    padding: 2px 30px ;
+}
+</style>
+<h:body>
+    <div class="container">
+	<h:form id="ItemsRentados">
+	<p:panel header="Items" toggleable="true" toggleSpeed="500" widgetVar="panel1" style="text-align: center" name="panel1" id="panel1">
+            <p:dataTable  id="clienteDT" var="itemV" value="#{AlquilerBean.consultarItemsCliente(AlquilerBean.cliente)}" style="text-align: left; align: center">
+                <p:column headerText="Nombre">
+                    <h:outputText value="#{itemV.item.nombre}" />
+                </p:column>
+                <p:column headerText="Fecha Inicio">
+                    <h:outputText value="#{itemV.fechainiciorenta}" />
+                </p:column>
+                <p:column headerText="Fecha Fin">
+                    <h:outputText value="#{itemV.fechafinrenta}" />
+                </p:column>
+		<p:column headerText="Multa">
+                    <h:outputText value="#{AlquilerBean.consultarMulta(itemV.item.id)}" />
+                </p:column>
+            </p:dataTable>
+	 </p:panel>
+	 <p:panel header="Registro" toggleable="true" toggleSpeed="500" widgetVar="panel2" style="text-align: center;" name="panel2" id="panel2" collapsed="true">
+	    <h:panelGrid columns="2" style="text-align: center; margin: auto;">
+		<p:outputLabel value="ID Item: "/>
+                <p:inputText  id="item" type="String" binding="#{idItem}"/>
+                <p:outputLabel value="Numero de dias: " />
+		<p:inputText  id="dias" type="String" binding="#{nDays}"/>
+                <p:outputLabel value="Costo: " />
+		<p:inputText  id="costo" type="String" value="#{AlquilerBean.costoAlquiler}"/>
+            </h:panelGrid>
+            <p:commandButton value="Registrar" update="ItemsRentados" action="registrocliente?faces-redirect = true" actionListener="#{AlquilerBean.registrarAlquiler(idItem.value,nDays.value)}"/>
+	    <p:commandButton update="ItemsRentados" value="Calcular costos" actionListener="#{AlquilerBean.consultarCosto(idItem.value,nDays.value)}" style="margin-left: 5px; margin-top: 5px"/>
+	</p:panel>
+	<p:commandButton value="Volver" action="registrocliente?faces-redirect = true" style="display: block ; margin: auto; margin-top: 10px"/>
+	</h:form>
+    </div>
+</h:body>
+</html>

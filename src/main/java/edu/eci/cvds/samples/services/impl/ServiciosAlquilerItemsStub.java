@@ -7,7 +7,6 @@ import edu.eci.cvds.samples.entities.TipoItem;
 import edu.eci.cvds.samples.services.ExcepcionServiciosAlquiler;
 import edu.eci.cvds.samples.services.ServiciosAlquiler;
 
-import java.io.Serializable;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
@@ -74,6 +73,7 @@ public class ServiciosAlquilerItemsStub implements ServiciosAlquiler {
         }
         else{throw new ExcepcionServiciosAlquiler("Cliente no registrado:"+docu);}
     }
+
 
     @Override
     public Item consultarItem(int id) throws ExcepcionServiciosAlquiler {
@@ -239,4 +239,5 @@ public class ServiciosAlquilerItemsStub implements ServiciosAlquiler {
         clientes.put(c3.getDocumento(), c3);
 
     }
+    public void registrarTipoItem(TipoItem ti) throws ExcepcionServiciosAlquiler{}
 }

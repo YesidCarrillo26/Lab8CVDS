@@ -1,16 +1,12 @@
 package edu.eci.cvds.sampleprj.dao.mybatis;
 
 import com.google.inject.Inject;
-import com.google.inject.Singleton;
 import edu.eci.cvds.sampleprj.dao.ItemDAO;
 import edu.eci.cvds.sampleprj.dao.PersistenceException;
-import edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper;
 import edu.eci.cvds.samples.entities.Item;
 import edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper;
-import edu.eci.cvds.samples.entities.TipoItem;
 import org.mybatis.guice.transactional.Transactional;
 
-import java.sql.SQLException;
 import java.util.List;
 
 public class MyBATISItemDAO implements ItemDAO{
@@ -19,7 +15,7 @@ public class MyBATISItemDAO implements ItemDAO{
     private ItemMapper itemMapper;
 
     @Override
-    public void save(Item it) throws PersistenceException{
+    public void save(Item it) throws PersistenceException {
         try{
             itemMapper.insertarItem(it);
         }
