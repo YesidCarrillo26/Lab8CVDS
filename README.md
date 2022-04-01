@@ -9,7 +9,8 @@
 
 ### Ejecucion del programa
 ``` mvn exec:java -Dexec.mainClass="edu.eci.cvds.sampleprj.jdbc.JDBCExample" 
--Dexec.args="argument1" ```
+-Dexec.args="argument1" 
+```
     
 ## PARTE I. INICIO EN CLASE
 1. **Actualice el proyecto del taller realizados en el ejercicio anterior. Agregue las clases y excepciones no descritas de ser necesario.**
