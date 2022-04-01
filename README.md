@@ -583,9 +583,8 @@ mvn exec:java -Dexec.mainClass="edu.eci.cvds.sampleprj.jdbc.JDBCExample" -Dexec.
     }
     ```
 8. **Pruebe el programa ‘Main’ suministrado, y con este rectifique que a través de la capa lógica se pueda consultar un cliente.**  
-![ConsultaCliente](./img/ConsultarCliente.PNG)  
+![ConsultaCliente](/img/ConsultarCliente.PNG)  
 9. **Implemente los métodos que sean necesarios en las interfaces de las entidades (DAO) y en sus implementaciones haciendo uso del DAO inyectado. Haga un programa para comprobar que la consulta de un cliente se haga correctamente, a través de la capa lógica.**  
-![ConsultaCliente](./img/ConsultaCliente2.PNG)  
 
 ## PARTE II - PRUEBAS
 1. **Implemente las operaciones de la lógica que hagan falta para satisfacer los requerimientos para la capa de presentación, teniendo en cuenta, que puede requerir agregar más operaciones a los DAOs -y por ende- más mappers de MyBATIS.**
