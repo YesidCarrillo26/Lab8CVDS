@@ -62,7 +62,7 @@ public class AlquilerItemsBean extends BasePageBean {
 		serviciosAlquiler.registrarCliente(nuevo);
 		added.add(nuevo);
 	}catch(Exception e){
-		FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR,"Error ", "Ya se encuentra registrado un cliente con documento '" + documento + "'"));
+		FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR,"Error ", e.getMessage()));
 	}
     }
 
