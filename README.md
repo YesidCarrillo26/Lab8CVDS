@@ -800,6 +800,6 @@ mvn exec:java -Dexec.mainClass="edu.eci.cvds.sampleprj.jdbc.JDBCExample" -Dexec.
 
 ## LINKS DE VERIFICACION
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/bb95a11164fc4712943db140899979f4)](https://www.codacy.com/gh/J-382/CVDS_LAB_08/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=J-382/CVDS_LAB_08&amp;utm_campaign=Badge_Grade)[![CircleCI](https://circleci.com/gh/AngieMeG/CVDS_Lab_08.svg?style=svg)](https://circleci.com/gh/AngieMeG/CVDS_Lab_08)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/065cd88079f840d9bf601497c894de70)](https://www.codacy.com/gh/YesidCarrillo26/Lab8CVDS/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=YesidCarrillo26/Lab8CVDS&amp;utm_campaign=Badge_Grade)[![CircleCI](https://circleci.com/gh/YesidCarrillo26/Lab8CVDS/tree/main.svg?style=svg)](https://circleci.com/gh/YesidCarrillo26/Lab8CVDS/tree/main)
 
 
